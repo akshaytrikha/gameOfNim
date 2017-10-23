@@ -179,8 +179,6 @@ def main():
                 else:
                     break
 
-    print("ye bro it work")
-
 main()
 
 # run gameOfNim
