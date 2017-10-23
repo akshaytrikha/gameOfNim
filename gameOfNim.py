@@ -1,14 +1,9 @@
-# Starter file for Hmmmwork6, updated for python3
-# hw6 problem 4
-#
-# date: 21st October, 2017
-
-# Partner programmed with Elena Ehrlich and with help from Violet Burbank
+# -*- coding: utf-8 -*-
 
 from functools import *
 
 def nimSum (piles):
-    # 
+    # performs the xor operation on numbers in "piles"
     if piles == []:
         return 0
     else:
@@ -36,7 +31,7 @@ def computerTakes(piles):
 def printPiles(coins):
     # prints contents of all coin piles
     print("------------------------")
-    for i in range(len(coins)):Í
+    for i in range(len(coins)):
         print("Pile " + str(i) + " has " + str(coins[i]) + " coins")
     print("------------------------")
 
@@ -188,4 +183,4 @@ def main():
 
 main()
 
-# run hw6pr4
+# run gameOfNim
