@@ -87,10 +87,10 @@ def userTurn(numberOfPiles, coinsArray):
         userPileChoice = input()
         try:
             userPileChoice = int(userPileChoice)
-            assert(userPileChoice < numberOfPiles and userPileChoice > 0 )
+            assert(userPileChoice < numberOfPiles and userPileChoice > 0 and coinsArray[userPileChoice] > 0)
         except (ValueError, AssertionError):
             print()
-            print("oops! try again, input must be from 0 to "  + str(numberOfPiles - 1))
+            print("oops! try again, that isn't valid")
             continue
         break
 
